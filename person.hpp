@@ -12,13 +12,15 @@ public:
     virtual void sleep() = 0;
     virtual void print() = 0; //this will print all stats
 
-private:
-    void updateAll(); //This will update all variables
+protected:
     double energy;
     double happiness;
     double productivity;
     double health;
     double hygiene;
+
+private:
+    void updateAll(); //This will update all variables
 };
 
 #endif
